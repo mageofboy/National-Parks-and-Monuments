@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Statue of Liberty</title>
+<!--Replace “Monument Template” with name of park / monument as in spreadsheet-->
+
+<link rel="stylesheet" type="text/css" href="monuments.css" />
+
+<script type="text/javascript">
+<!-- Hide from old browsers
+
+function showBasic()	{
+	document.getElementById('basic').style.display="block"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="none"
+	
+	document.getElementById('block1').style.backgroundColor="#7fa39a"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showHistory()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="block"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="none"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#7fa39a"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showActivities()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="block" 
+	document.getElementById('facts').style.display="none"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#7fa39a"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showFacts()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="block"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#7fa39a"
+}
+	
+var slides=new Array("image/SL-Statue.jpg", "image/SL-Above.jpg", "image/SL-Sun.jpg", "image/SL-Binocular.jpg", "image/SL-Sunset.jpg", "image/SL-Torch.jpg", "image/SL-Closeup.jpg", "image/SL-Cruise.jpg")
+
+
+var slideCntr=slides.length-1
+function slideShow() {
+	slideCntr+=1
+	if (slideCntr==slides.length) slideCntr=0
+		document.getElementById("slideHolder").src = slides[slideCntr]
+		setTimeout("slideShow()",5000)
+}
+
+-->
+</script>
+<style type="text/css">
+<!--
+.banner img						{margin-top: 0px;}								
+-->
+</style>
+</head>
+
+<body onLoad="slideShow(); slideShow2();">
+
+<ul class="navigation">
+	<li class="navlist"><a class="home" href="homepage.html">Home</a></li> 
+		
+	<li class="navlist"><a class="parks" href="NP-homepage.html">Parks</a>
+		<div class="navlist-content" style="width: 33.333%">
+			<a href="../../National Parks/Crater Lake/CL-Home.html">Crater Lake</a>
+			<a href="../../National Parks/Death Valley/DV-Home.html">Death Valley</a>
+			<a href="../../National Parks/Everglades/ENP-Home.html">Everglades National Park</a>
+			<a href="../../National Parks/Grand Canyon/GCNP-Home.html">Grand Canyon National Park</a>
+			<a href="../../National Parks/Joshua Tree/JT-Home.html">Joshua Tree</a>
+			<a href="../../National Parks/Mammoth Cave/Mcave-Home.html">Mammoth Cave</a>
+			<a href="../../National Parks/Muir Woods/MW-Home.html">Muir Woods</a>
+			<a href="../../National Parks/Yellowstone/YSNP-Home.html">Yellowstone</a>
+			<a href="../../National Parks/Yosemite/YNP-Home.html">Yosemite National Park</a>
+			<a href="../../National Parks/Zion/ZNP-Home.html">Zion National Park</a>
+		</div>
+	</li>
+		
+	<li class="navlist"><a class="monuments" href="NM-homepage.html">Monuments</a>
+		<div class="navlist-content" style="width: 33.333%">
+			<a href="../9 11 Memorial/9M-Home.html">9/11 Memorial</a>
+			<a href="../Alcatraz Island/AL-Home.html">Alcatraz Island</a>
+			<a href="../Mt. Rushmore/MTR-Home.html">Mt. Rushmore</a>
+			<a href="../Statue of Liberty/SL-Home.html">Statue of Liberty</a>
+			<a href="../WW2/WW2-Home.html">World War II Valor</a>
+		</div>
+	</li>
+</ul>
+	<img style="float:left" src="image/SL-Logo.jpg" height="200px"  alt="Statue of Liberty Banner"/>
+<div class="banner">
+	<img class="banner" style="float:right" src="image/SOLBanner.png" alt="Statue of Liberty Banner"/>
+
+</div>
+
+<p class="name">Statue of Liberty</p>
+
+<hr />
+	
+<img style="width:30%; height: 400px; float: left; margin-left: 10%; margin-bottom: 8px" src="image/SL-statue.jpg" alt="slide show" id="slideHolder">
+	
+<iframe style="float: right; margin-right: 10.5%; margin-bottom: 8px; border:0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.30620275683!2d-74.04668908432683!3d40.68925344694336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue+of+Liberty+National+Monument!5e0!3m2!1sen!2sus!4v1494011277337" width="30%" height="400px" frameborder="0" allowfullscreen></iframe>
+
+<hr />
+
+<div style="width: 90%; margin: auto; margin-top: -8px" id="info">
+	<ul class="information">
+		<li class="info" style="background-color: #7fa39a" id="block1"><a href="#info" onClick="showBasic()">Basic Information</a></li>
+		
+		<li class="info" id="block2"><a href="#info" onClick="showHistory()">History</a></li>
+		
+		<li class="info" id="block3"><a href="#info" onClick="showActivities()">Activities and Sights</a></li>
+		
+		<li class="info" id="block4"><a href="#info" onClick="showFacts()">Fun Facts</a></li>
+	</ul>
+</div>
+
+<div style="width: 90%; margin: auto">
+	<div class="box" id="basic" style="display: block">
+		<p>
+			<b><u>Hours of Operation</u></b><br/>
+			<ul><li>Sunday: 9:30 AM - 3:30 PM</li>
+				<li>Monday: 9:30 AM - 3:30 PM</li>
+				<li>Tuesday: 9:30 AM - 3:30 PM</li>
+				<li>Wednesday: 9:30 AM - 3:30 PM</li>
+				<li>Thursday: 9:30 AM - 3:30 PM</li>
+				<li>Friday: 9:30 AM - 3:30 PM</li>
+				<li>Saturday: 9:30 AM - 3:30 PM</li>
+			</ul>
+			<b><u>Location</u></b><br/>
+				<p>The Statue of Liberty is located at Liberty Island, which is in New York, NY 10004. 
+				<br/><br/>
+			<b><u>Year Founded / Established / Built:</u></b><br/>
+				<p>The statue of liberty began construction in September 1875 and was finished in October 28, 1886.</p>
+			
+			<b><u>Size:</u></b><br/>
+				<p>The height of copper statue (to torch): 151 feet 1 inch (46 meters). From ground level to torch: 305 feet 1 inch (93 meters).</p>
+				<br/><br/>
+			
+			<b><u></u></b><br/>
+				<!--Content-->
+				<br/><br/>
+		</p>
+	</div>
+
+	<div class="box" id="history" style="display: none">
+		<p>
+			<b><u>History:</u></b>
+				<p>The statue of liberty was built (founded) on september 1875, it was also established on October 28, 1886. It was designed by Frederic Auguste Bartholdi, He gave it as a gift to the USA from the people of France. The statue of Liberty is 25 feet tall and is made of copper. The statue is two pennies thick, which is like two pennies put together. The statue was a gift from France in 1886.It was a gift because the friendship The US and France sustained during the American Revolution. It symbolizes freedom and democracy in the US.It also symbolizes enlightenment. The statue of liberty may not be a women it may be designed after Frederic Auguste Bartholdi's brother.</p>
+				<br/><br/>
+				
+			<b><u>Timeline:</u></b>
+				<br/>
+				<ul>
+					<li><b>1865:</b> Edouard de Laboulaye, a French political intellectual and authority on the U.S. Constitution, proposes that France give a statue representing liberty to the United States for its centennial.</li><br/>
+					<li><b>1870:</b>Auguste Bartholdi is designated as the lead scultpor of the Statue of Liberty.</li><br/>
+					<li><b>1885:</b>The Statue of Liberty is disassembled in Paris and is shipped to the United States.</li><br/>
+					<li><b>1886:</b>The statue's pedestal is completed and the statue begins to be reassembled. It is assembled quickly and is finished the same year.</li><br/>
+				</ul>
+		</p>
+	</div>
+
+	<div class="box" id="activities" style="display: none">
+		<p>
+			<b><u>Activities:</u></b>
+				<ul style="list-style-type: none">
+					<li><b>Information Center:</b>
+						<ul style="list-style-type: circle">
+							<li>There are park rangers that will be able to help you around the park and answer any questions that may come to mind. There are set times for tours and ferries.</li>
+						</ul>
+					</li><br/>
+					
+					<li><b>The Crown:</b>
+						<ul style="list-style-type: circle">
+							<li> Guests can walk up a 20 story building. You will see panoramic views of the city.</li>
+						</ul>
+					</li><br/>
+					
+					<li><b>The Pedestal</b>
+						<ul style="list-style-type: circle">
+							<li>The Pedestal of the Statue of Liberty was designed by the architect Richard Morris. It is half of the height of the Statue of Liberty. </li>
+						</ul><br/>
+						
+					<li><b>The Museum (Liberty Island Museum):</b>
+						<ul style="list-style-type: circle">
+							<li> Tourists may visit the museum that is within the park, to catch a glimpse at a recreation of Lady Liberty's copper face.</li>
+						</ul>
+					</li><br/>						
+					<li><b>Park Ranger Guided Tours: </b>
+						<ul style="list-style-type: circle">
+							<li> Customers have the option to be shown around the park by the park rangers. The tour lasts 30 - 45 minutes, where any age is welcomed. The tour will cover general information like :
+								<ul style="list-style-type: square"><li>Why/How the Statue of Liberty was created</li>
+									<li>Important people who contributed in the construction of the Statue</li>
+									<li>History of Liberty Island</li>
+									<li>Symbolism of the Statue</li>
+									<li>The Restoration Project of the 1980's</li>
+								</ul>
+							</li>
+						</ul>
+					</li><br/>
+									
+				</ul>				
+		</p>
+	</div>
+
+	<div class="box" id="facts" style="display: none">
+		<p>
+			<b><u>FUN FACTS!</u></b>
+				<ul>
+					<li>The Statue's "birthday" is on October 28th. That was when she was officially approved by the President of the U.S.</li><br/>
+					<li>The Statue weighs 450,000 pounds.</li><br/>
+					<li>Lady Liberty represents Libertas, who was the Roman goddess of freedom.</li><br/>
+					<li>The date of the American Declaration of Independence (July 4, 1776) is inscribed on the tablet that she possesses.</li><br/>
+					<li>Although the Statue is green from oxidation, it offers protection from further damage.</li><br/>
+					<li>The statue was originally sculpted by the French sculptor Fredric-Auguste Bartholdi, who created the statue out of hammered copper. Alexandre-Gustave Eiffel was responsible for the creation of the Eiffel tower, was responsible for the design of the statue's steel framework.</li><br/>					
+					<li>The island which the Statute of Liberty is located at used to be called Bedloe Island, in 1956 the name was changed to Liberty island.</li><br/>
+					<li>Lady Liberty's feet are standing in the presence of broken shackles and chains, and her right foot raised. This is an example her moving away from slavery and oppression. </li><br/>
+					<li>Seven spikes on the crown represents the seven oceans and continents of the world. </li><br/>
+				</ul>
+		</p>
+	</div>
+</div>
+
+
+
+<hr/ > 
+
+	<div align="center">
+		<video  width="320" height="240" controls>
+			<source src="video.mp4" type="video/mp4"> 
+		</video>
+	</div>
+
+<br/><br/><br/>
+<h6>
+	&nbsp; &nbsp; Photo Credits: 
+</h6>
+</body>
+</html>

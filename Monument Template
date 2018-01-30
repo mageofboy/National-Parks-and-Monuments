@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monument Template</title>
+<!--Replace “Monument Template” with name of park / monument as in spreadsheet-->
+
+<link rel="stylesheet" type="text/css" href="../monuments.css" />
+
+<script type="text/javascript">
+<!-- Hide from old browsers
+
+function showBasic()	{
+	document.getElementById('basic').style.display="block"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="none"
+	
+	document.getElementById('block1').style.backgroundColor="#7fa39a"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showHistory()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="block"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="none"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#7fa39a"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showActivities()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="block" 
+	document.getElementById('facts').style.display="none"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#7fa39a"
+	document.getElementById('block4').style.backgroundColor="#E0E0E0"
+}
+
+function showFacts()	{
+	document.getElementById('basic').style.display="none"
+	document.getElementById('history').style.display="none"
+	document.getElementById('activities').style.display="none" 
+	document.getElementById('facts').style.display="block"
+
+	document.getElementById('block1').style.backgroundColor="#E0E0E0"
+	document.getElementById('block2').style.backgroundColor="#E0E0E0"
+	document.getElementById('block3').style.backgroundColor="#E0E0E0"
+	document.getElementById('block4').style.backgroundColor="#7fa39a"
+}
+	
+var slides=new Array("img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg")
+<!--Replace with image files for slideshow-->
+
+var slideCntr=slides.length-1
+function slideShow() {
+	slideCntr+=1
+	if (slideCntr==slides.length) slideCntr=0
+		document.getElementById("slideHolder").src = slides[slideCntr]
+		setTimeout("slideShow()",2000)
+}
+-->
+</script>
+
+</head>
+
+<body onLoad="slideShow();">
+
+<ul class="navigation">
+	<li class="navlist"><a class="home" href="homepage.html">Home</a></li> 
+		
+	<li class="navlist"><a class="parks" href="NP-homepage.html">Parks</a>
+		<div class="navlist-content" style="width: 33.333%">
+			<a href="CL-Home.html">Crater Lake</a>
+			<a href="DV-Home.html">Death Valley</a>
+			<a href="ENP-Home.html">Everglades National Park</a>
+			<a href="GCNP-Home.html">Grand Canyon National Park</a>
+			<a href="JT-Home.html">Joshua Tree</a>
+			<a href="Mcave-Home.html">Mammoth Cave</a>
+			<a href="MW-Home.html">Muir Woods</a>
+			<a href="YSNP-Home.html">Yellowstone</a>
+			<a href="YNP-Home.html">Yosemite National Park</a>
+			<a href="ZNP-Home.html">Zion National Park</a>
+		</div>
+	</li>
+		
+	<li class="navlist"><a class="monuments" href="NM-homepage.html">Monuments</a>
+		<div class="navlist-content" style="width: 33.333%">
+			<a href="9M-Home.html">9/11 Memorial</a>
+			<a href="AL-Home.html">Alcatraz Island</a>
+			<a href="MTR-Home.html">Mt. Rushmore</a>
+			<a href="SL-Home.html">Statue of Liberty</a>
+			<a href="WW2-Home.html">World War II Valor</a>
+		</div>
+	</li>
+</ul>
+
+<div class="banner">
+	<img src="background.jpg" alt="image"/>
+	<!--Replace image file-->
+	<!--Replace image alt description-->
+</div>
+
+<p class="name">Name<!--Replace with name of park / monument as in spreadsheet--></p>
+
+<hr />
+	
+<img style="width: auto; height: 400px; float: left; margin-left: 10%; margin-bottom: 8px" src="img1.jpg" alt="slide show" id="slideHolder">
+	
+<iframe style="float: right; margin-right: 10.5%; margin-bottom: 8px; border:0"  src=”” width="600" height="400" frameborder="0" allowfullscreen></iframe><!--Insert corresponding map src; link for embedded maps here-->
+
+<hr />
+
+<div style="width: 90%; margin: auto; margin-top: -8px" id="info">
+	<ul class="information">
+		<li class="info" style="background-color: #7fa39a" id="block1"><a href="#info" onClick="showBasic()">Basic Information</a></li>
+		
+		<li class="info" id="block2"><a href="#info" onClick="showHistory()">History</a></li>
+		
+		<li class="info" id="block3"><a href="#info" onClick="showActivities()">Activities and Sights</a></li>
+		
+		<li class="info" id="block4"><a href="#info" onClick="showFacts()">Fun Facts</a></li>
+	</ul>
+</div>
+
+<div style="width: 90%; margin: auto">
+	<div class="box" id="basic" style="display: block">
+		<p>
+			<b><u>Hours + Location:</u></b><br/>
+				<!--Content-->
+				<br/><br/>
+			
+			<b><u>Year Founded / Established / Built:</u></b><br/>
+				<!--Content-->
+				<br/><br/>
+			
+			<b><u>Size:</u></b><br/>
+				<!--Content-->
+				<br/><br/>
+			
+			<b><u>(If possible) Content Information:</u></b><br/>
+				<!--Content-->
+				<br/><br/>
+		</p>
+	</div>
+
+	<div class="box" id="history" style="display: none">
+		<p>
+			<b><u>History:</u></b>
+				<!--Explaination of history in Paragraph-->
+				<br/><br/>
+				
+			<b><u>(If possible) Timeline:</u></b>
+				<br/>
+				<!--Bulleted List with Years / Dates-->
+				<ul>
+					<li>thing<!--Content--></li><br/>
+					<li>thing<!--Content--></li><br/>
+					<li>etc<!--Content--></li><br/>
+				</ul>
+		</p>
+	</div>
+
+	<div class="box" id="activities" style="display: none">
+		<p>
+			<b><u>Activities:</u></b>
+				<ul>
+					<li><b>Name of Information<!--Name--></b>
+						<ul style="list-style-type: circle">
+							<li>Information<!--Content--></li>
+						</ul>
+					</li><br/>
+					
+					<li><b>Name of Information<!--Name--></b>
+						<ul style="list-style-type: circle">
+							<li>Information<!--Content--></li>
+						</ul>
+					</li><br/>
+					
+					<li><b>Etc<!--Name--></b>
+						<ul style="list-style-type: circle">
+							<li>Etc<!--Content--></li>
+						</ul><br/>
+					</li>
+				</ul>				
+		</p>
+	</div>
+
+	<div class="box" id="facts" style="display: none">
+		<p>
+			<b><u>FUN FACTS!</u></b>
+				<ul>
+					<li>stuff<!--Content--></li><br/>
+					<li>stuff<!--Content--></li><br/>
+					<li>etc<!--Content--></li><br/>
+				</ul>
+		</p>
+	</div>
+</div>
+
+
+
+<hr/ > 
+<!-- video files -->
+	<div align="center">
+		<video  width="320" height="240" controls>
+			<source src="video.mp4" type="video/mp4"> 
+  		Your browser does not support the video tag.
+		</video>
+	</div>
+
+<br/><br/><br/>
+
+</body>
+</html>
