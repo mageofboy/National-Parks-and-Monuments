@@ -1,0 +1,110 @@
+body							{background: linear-gradient(#7fa39a, white, #7fa39a);
+								font-size: 18px;}
+
+.box							{background-color: #7fa39a;
+								padding: 10px;}
+
+hr								{height: 5px;
+								width: 95%; 
+								background-color: #397465; 
+								border: none; 
+								border-radius: 20px;}
+
+
+
+/* NAVIGATION BAR */
+	
+body							{margin: 0;
+								color: #25241d;}
+
+ul.navigation					{list-style-type: none;
+								overflow: hidden;
+								margin: auto;
+								margin-left: -40px;}		
+
+ul.navigation li				{text-align: center;
+								width: 33.333%;
+								float: left;}
+				
+ul li.navlist					{display: inline;
+								font-size: 36px;}	
+
+ul li.navlist a					{display: block;
+								padding: 14px 16px;
+								text-align: center;
+								text-decoration: none;
+								transition-duration: 0.4s;}		
+
+ul li.navlist a:hover			{background-color: #E0E0E0;}
+
+a								{text-decoration: none;}
+										
+a.home							{color: #25241d;}
+
+a.home:active					{color: #cccccc;}
+
+a.parks							{color: #63994b;}
+
+a.parks:active					{color: #7fa39a;}
+
+a.monuments						{color: #397465;}
+
+a.monuments:active				{color: #7fa39a;}
+
+
+/* IMAGE BANNER */
+
+.banner							{height: 200px;
+								overflow: hidden;}
+
+.banner img						{width: 100%;
+								margin: auto;
+								margin-top: -125px;}			
+
+/* NAME OF PARK / MONUMENT */
+
+p.name							{font-size: 36px;
+								margin-left: 5%;} 														
+/* INFORMATION BAR */
+
+ul.information					{list-style-type: none;
+								overflow: hidden;
+								margin-left: -40px;
+								width: 100%;}
+						
+ul.information li				{text-align: center;
+								width: 24.76%;
+								float: left;}
+
+ul li.info						{display: inline;
+								background-color: #E0E0E0;
+								font-size: 20px;
+font-weight: bold;}
+
+ul li.info a					{display: block;
+								padding: 14px 16px;
+								text-align: center;
+								text-decoration: none;
+								color: #25241d;
+								transition-duration: 0.4s;}	
+								
+ul li.info a:hover				{background-color: #7fa39a;}				
+
+/* DROPDOWN MENU */
+
+.navlist-content 				{display: none;
+								font-size: 20px;
+								position: absolute;
+								background-color: white;
+								box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.navlist-content a 				{color: #25241d;
+								padding: 12px 16px;
+								text-decoration: none;
+								display: block;
+								text-align: left;
+								border-top: 1px solid #E0E0E0;}
+
+.navlist-content a:hover 		{background-color: #66ff66}
+
+.navlist:hover .navlist-content {display: block;}	
